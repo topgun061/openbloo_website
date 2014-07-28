@@ -1,0 +1,102 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta carset ="utf-8">
+    <title>OpenBloo | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OpenBloo is an experience network which connects you to places, activities and events based on your personal interests.">
+    <meta name="author" content="OpenBloo, LLC.">
+
+<!-- Le Styles -->
+
+    <link href="{% static 'fonts/HelveticaNeueLTStd-Roman.otf' %}" rel="stylesheet"/>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'main.css' %}" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body id="index" style="zoom:1">
+<header class="main">
+    <div class="wrap">
+        <nav id="global_nav">
+            <div class="cell left">
+                <ul>
+                    <li>
+                        <a href="/pages/about/" title="About">About</a>
+                    </li>
+                    <li>
+                        <a href="#feature" title="Features">Features</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell center">
+                <a href="/" title="home">
+                    <img src="https://s3-us-west-2.amazonaws.com/openbloo/img/openbloo_logo_white_29.png">
+                </a>
+            </div>
+            <div class="cell right">
+                <ul>
+                    <li>
+                        <a href="#" title="Blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/pages/help/" title="Help">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="section full-size" style="height:680px">
+    <div class="middle">
+    <h1 class="txt-white">Discover Expriences related to your interests</h1>
+    <p>Sign up to recieve exclusive updates and access to the beta.</p>
+    <div class="btn-lg pink center-block">
+        <h4>Sign Up</h4>
+    </div>
+    </div>
+</div>
+<div class="sub-header bloo">
+    <div class="container">
+        <h1 class="txt-white">Easy. Simple. Beautiful.</h1>
+    </div>
+    <div class="center-block badge purple txt-white">
+        <p> Learn More</p>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="content-block">
+            <h1 style="color:#27a9e1">What is OpenBloo</h1>
+            <p>Open Bloo is an experience network that connects people to places, activities and events in real-time to help build amazing memories and moments the define our lives.</p>
+        </div>
+        <div class="content-block">
+            <h1><a name="features" style="color:#27a9e1">Features</a></h1>
+            <div class="feature-block" title="Experience Feed">
+                <img src="https://s3-us-west-2.amazonaws.com/openbloo/img/icons/experience_feed.png" class="center-block"/>
+                <p>Recieve places, activities and events personalized to your interests using the Experience Feed. Scroll high-quality photos to quickly navigate and select expereinces that peek your interests. Filter your results to narrow down results, or bookmark and organize experiences for later. </p>
+            </div>
+            <div class="feature-block" title ="Social Feed">
+                <img src="https://s3-us-west-2.amazonaws.com/openbloo/img/icons/social.png" class="center-block"/>
+                <p>OpenBloo was made for friends, family and co-workers in mind. Create a party with the people of your choice and start finding experiences that relate to everyone's interests.Plan vacations and special days with "Invites" which sync to your mobile device calendar to ensure everyone is on the same page.</p>
+            </div>
+            <div class="feature-block" title="Postcards">
+                <img src="https://s3-us-west-2.amazonaws.com/openbloo/img/icons/postcards.png" class="center-block"/>
+                <p>The postcard for the 21st century has arrived. High-quality photos which capture the essence of an expereince are displayed on your expereince feed. Simply flip the card to the back and recieve information on the expereince in one seamlesss gesture. No more navigating through excessive pages to find basic information.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "footer.html" %}
+
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+    <script type = "text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
